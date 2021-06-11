@@ -1,13 +1,12 @@
 class ArticlesController < ApplicationController
-    
+
     before_action :set_article, only: [:show, :edit, :update]
-    
+
     def index
         @article = Article.all
     end
 
     def show
-        @article = Article.find(params[:id])
     end
 
     def new
